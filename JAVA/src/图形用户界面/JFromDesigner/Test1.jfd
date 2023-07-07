@@ -1,0 +1,25 @@
+JFDML JFormDesigner: "7.0.5.2.410" Java: "11.0.11" encoding: "UTF-8"
+
+new FormModel {
+	"i18n.autoExternalize": true
+	"i18n.bundlePackage": "JFormDesigner"
+	"i18n.bundleName": "form"
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.BorderLayout ) {
+			"hgap": 3
+			"vgap": 3
+		} ) {
+			name: "this"
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": new FormMessage( null, "button1.text" )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "West"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 140 )
+			"size": new java.awt.Dimension( 735, 395 )
+		} )
+	}
+}
